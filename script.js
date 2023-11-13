@@ -79,16 +79,22 @@ function NextPlayer() {
 }
 
 function getTimeleft() {
-    let timeleftHTML = getElementById("woorden");
+    let timeleftHTML = document.getElementById("woorden");
+
     if (timeleftHTML == null) {
         return;
     }
-    
-    timeleftHTML.innerHTML = timeleft;
+
+    var now = new Date().getTime();
+    var distance = countDownTime - now;
+    timeleftHTML.innerHTML = "" + (distance/1000).toFixed(0) + " seconden";
+
+    if (distance < 0) {
+        timeleftHTML.innerHTML = "Tijd voorbij!";
+    }
 }
 
 function onStart() {
-    alert("Test");
     AddPlayerScript();
     ShowPlayerInList();
     ShowTeamsInList();
