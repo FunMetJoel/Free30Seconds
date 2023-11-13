@@ -1,0 +1,123 @@
+:root{
+    --primary-color: #4CAF50;
+    --primary-color-dark: #357e3d;
+    --primary-color-light: #3e8e41;
+    --background-color: #f2f2f2;
+    --background-color-dark: #e6e6e6;
+    --text-color: #333;
+    --text-color-light: #fff;
+    --border-radius: 10px;
+    --box-shadow: 0 4px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow) var(--background-color-dark);
+    margin: 20px;
+    max-width: 800px;
+    width: 90%;
+}
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 36px;
+    color: #333;
+}
+.button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow) var(--primary-color-dark);
+}
+.button:hover {
+    background-color: var(--primary-color-light);
+}
+.button:active {
+    background-color: var(--primary-color-dark);
+    box-shadow: var(--box-shadow) var(--box-shadow) var(--primary-color-dark);
+    transform: translateY(4px);
+}
+
+
+#playerInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    flex-grow: 1;
+
+}
+
+input[type="text"]:focus {
+    border: 1px solid var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow) var(--primary-color-dark);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--primary-color-light);
+}
+
+button:active {
+    background-color: var(--primary-color-dark);
+    box-shadow: var(--box-shadow) var(--primary-color-dark);
+    transform: translateY(4px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 4px;
+}
