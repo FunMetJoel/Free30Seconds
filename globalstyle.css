@@ -22,7 +22,7 @@ body {
 }
 main {
     background-color: white;
-    padding: 20px;
+    padding: 2%;
     border-radius: 10px;
     box-shadow: var(--box-shadow) var(--background-color-dark);
     margin: 20px;
@@ -35,6 +35,11 @@ h1 {
     font-size: 36px;
     color: #333;
 }
+
+h2 {
+    color: #555;
+}
+
 .button {
     display: block;
     margin: 20px auto;
