@@ -10,6 +10,22 @@
     --box-shadow: 0 4px;
 }
 
+section {
+    display: none;
+}
+.HomeActive #Home{
+    display: block;
+}
+.TeamsActive #Teams{
+    display: block;
+}
+.PlayerPageActive #PlayerPage{
+    display: block
+}
+.WoordenPageActive #WoordenPage {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;

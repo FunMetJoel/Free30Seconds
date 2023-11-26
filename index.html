@@ -4,20 +4,46 @@
         <title>30 Seonds</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="globalstyle.css">
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="onePageScript.js"></script>
     </head>
     <body>
-        <main>
-            <h1>Betere 30 seconds!</h1>
-            <h2>Voeg spelers toe</h2>
-            <div id="playerInput">
-                <input type="text" id="newItemInput">
-                <button id="addButton">Add Player</button>
-            </div>
-            
-            <ul id="PlayerList"></ul>
-            
-            <a class="button" href="javascript:createTeams()">Speel nu!</a>
+        <main id="mainDiv" class="HomeActive">
+            <section id="Home">
+                <h1>Betere 30 seconds!</h1>
+                <h2>Voeg spelers toe</h2>
+                <div id="playerInput">
+                    <input type="text" id="addPlayerInput">
+                    <button id="addPlayerButton">Add Player</button>
+                </div>
+                
+                <ul id="PlayerList"></ul>
+                
+                <a class="button" href="javascript:createTeams()">Speel nu!</a>
+            </section>
+
+            <section id="Teams">
+                <h1>Teams</h1>
+                <div id="teamsDiv"></div>
+                
+                <a class="button" href="javascript:createTeams()">Reroll!</a>
+                <a class="button" href="javascript:startGame()">Start!</a>
+            </section>
+
+            <section id="PlayerPage">
+                <h1>Maak je klaar</h1>
+                <p id="TeamPunten"></p>
+                <p>En de volgende speler is:</p>
+                <h2 id="PlayerText"></h2>
+                <p>Ben je er klaar voor?</p>
+                <button onclick='startTime()'>Start</button>
+            </section>
+
+            <section id="WoordenPage">
+                <h1>Beschrijf deze woorden</h1>
+                <p id="TimerDiv"></p>
+                <ul id="WoordenDiv"></ul>
+                <button onclick='AddPunten()'>Confirm</button>
+            </section>
         </main>
     </body>
 </html>
